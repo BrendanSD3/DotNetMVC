@@ -19,18 +19,38 @@ namespace MvcMovie.Controllers
             _context = context;
         }
 
-        // GET: Movies
-     public async Task<IActionResult> Index(string searchString)
+      // GET: Movies
+   /*    A list of movies.
+A SelectList containing the list of genres. This allows the user to select a genre from the list.
+MovieGenre, which contains the selected genre.
+SearchString, which contains the text users enter in the search text box. */
+public async Task<IActionResult> Index(string movieGenre, string searchString)
 {
+    // Use LINQ to get list of genres.
+    IQueryable<string> genreQuery = from m in _context.Movie
+                                    orderby m.Genre
+                                    select m.Genre;
+
     var movies = from m in _context.Movie
                  select m;
 
-    if (!String.IsNullOrEmpty(searchString))
+    if (!string.IsNullOrEmpty(searchString))
     {
         movies = movies.Where(s => s.Title.Contains(searchString));
     }
 
-    return View(await movies.ToListAsync());
+    if (!string.IsNullOrEmpty(movieGenre))
+    {
+        movies = movies.Where(x => x.Genre == movieGenre);
+    }
+
+    var movieGenreVM = new MovieGenreViewModel
+    {
+        Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+        Movies = await movies.ToListAsync()
+    };
+
+    return View(movieGenreVM);
 }
 
         // GET: Movies/Details/5
