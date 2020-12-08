@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\brend\\Desktop\\C#.Net\\DotnetCoreMVC\\MvcMovie\\MvcMovie.csproj": {}
+    "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\brend\\Desktop\\C#.Net\\DotnetCoreMVC\\MvcMovie\\MvcMovie.csproj": {
+    "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\brend\\Desktop\\C#.Net\\DotnetCoreMVC\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "C:\\Users\\brend\\Desktop\\C#.Net\\DotnetCoreMVC\\MvcMovie\\MvcMovie.csproj",
-        "packagesPath": "C:\\Users\\brend\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\brend\\Desktop\\C#.Net\\DotnetCoreMVC\\MvcMovie\\obj\\",
+        "projectPath": "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
+        "packagesPath": "C:\\Users\\bwall\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\brend\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bwall\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -67,7 +67,7 @@ namespace MvcMovie
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");//Question mark means id parameter is optional
+                    pattern: "{controller=Movies}/{action=Index}/{id?}");//Question mark means id parameter is optional
             });
         }
     }
