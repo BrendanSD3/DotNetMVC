@@ -11,8 +11,7 @@ namespace MvcMovie.Models
         public static void Initialize(IServiceProvider serviceProvider)
         {
             using (var context = new MvcMovieContext(
-                serviceProvider.GetRequiredService<
-                    DbContextOptions<MvcMovieContext>>()))
+                serviceProvider.GetRequiredService<DbContextOptions<MvcMovieContext>>()))
             {
                 // Look for any movies.
                 if (context.Movie.Any())
@@ -27,7 +26,9 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1989-2-12"),
                         Genre = "Romantic Comedy",
                         Rating = "R",
-                        Price = 7.99M
+                        Price = 7.99M,
+                        Review=3
+
                     },
 
                     new Movie
@@ -36,7 +37,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1984-3-13"),
                         Genre = "Comedy",
                         Rating = "R",
-                        Price = 8.99M
+                        Price = 8.99M,
+                        Review = 3
                     },
 
                     new Movie
@@ -45,7 +47,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1986-2-23"),
                         Genre = "Comedy",
                         Rating = "G",
-                        Price = 9.99M
+                        Price = 9.99M,
+                        Review = 3
                     },
 
                     new Movie
@@ -54,7 +57,8 @@ namespace MvcMovie.Models
                         ReleaseDate = DateTime.Parse("1959-4-15"),
                         Genre = "Western",
                         Rating = "PG",
-                        Price = 3.99M
+                        Price = 3.99M,
+                        Review = 5
                     }
                 );
                 context.SaveChanges();

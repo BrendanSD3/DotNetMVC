@@ -19,41 +19,41 @@ namespace MvcMovie.Controllers
             _context = context;
         }
 
-      // GET: Movies
-   /*    A list of movies.
-A SelectList containing the list of genres. This allows the user to select a genre from the list.
-MovieGenre, which contains the selected genre.
-SearchString, which contains the text users enter in the search text box. */
-public async Task<IActionResult> Index(string movieGenre, string searchString)
-{
-    // Use LINQ to get list of genres.
-    IQueryable<string> genreQuery = from m in _context.Movie
-                                    orderby m.Genre
-                                    select m.Genre;
+        // GET: Movies
+        /*    A list of movies.
+     A SelectList containing the list of genres. This allows the user to select a genre from the list.
+     MovieGenre, which contains the selected genre.
+     SearchString, which contains the text users enter in the search text box. */
+        public async Task<IActionResult> Index(string movieGenre, string searchString)
+        {
+            // Use LINQ to get list of genres.
+            IQueryable<string> genreQuery = from m in _context.Movie
+                                            orderby m.Genre
+                                            select m.Genre;
 
-    var movies = from m in _context.Movie
-                 select m;
+            var movies = from m in _context.Movie
+                         select m;
 
-    if (!string.IsNullOrEmpty(searchString))
-    {
-        movies = movies.Where(s => s.Title.Contains(searchString));
-    }
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Title.Contains(searchString));
+            }
 
-    if (!string.IsNullOrEmpty(movieGenre))
-    {
-        movies = movies.Where(x => x.Genre == movieGenre);
-    }
+            if (!string.IsNullOrEmpty(movieGenre))
+            {
+                movies = movies.Where(x => x.Genre == movieGenre);
+            }
 
-    var movieGenreVM = new MovieGenreViewModel
-    {
-        Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
-        Movies = await movies.ToListAsync()
-    };
+            var movieGenreVM = new MovieGenreViewModel
+            {
+                Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Movies = await movies.ToListAsync()
+            };
 
-    return View(movieGenreVM);
-}
+            return View(movieGenreVM);
+        }
         //for when the dropdown changes 
-       
+
 
         // GET: Movies/Details/5
         public async Task<IActionResult> Details(int? id)
@@ -84,7 +84,7 @@ public async Task<IActionResult> Index(string movieGenre, string searchString)
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating,Review")] Movie movie)
         {
             if (ModelState.IsValid)
             {
@@ -116,7 +116,7 @@ public async Task<IActionResult> Index(string movieGenre, string searchString)
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Movie movie)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,Rating,Review")] Movie movie)
         {
             if (id != movie.Id)
             {
