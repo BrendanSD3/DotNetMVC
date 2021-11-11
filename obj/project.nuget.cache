@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+ksmLq/a0WWeuABofAgw0MmBlRguVqJmGUAt7RnfQVWipaC27tIX7eWlioLMDLtaGifmrCcLG3NafKkDIYe8Qw==",
+  "dgSpecHash": "h/M0u9QqkLFGVy9QDiR45268I4LEfGnfaaKgXTaTRC/7LxW/jcJTLZTOFm4n+7GEfguwTcBfEdXKfmc+J4w9Tg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
+  "projectFilePath": "C:\\Users\\bwall\\Desktop\\CustomTheme\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bwall\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\bwall\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
@@ -165,7 +165,10 @@
     "C:\\Users\\bwall\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\bwall\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\bwall\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\bwall\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\bwall\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\bwall\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\bwall\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\bwall\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
   ],
   "logs": []
 }

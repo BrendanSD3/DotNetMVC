@@ -8553,19 +8553,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bwall\\.nuget\\packages\\": {}
+    "C:\\Users\\bwall\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
+      "projectUniqueName": "C:\\Users\\bwall\\Desktop\\CustomTheme\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
       "projectName": "MvcMovie",
-      "projectPath": "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
+      "projectPath": "C:\\Users\\bwall\\Desktop\\CustomTheme\\smallCodeProjects\\DotnetMVC\\MvcMovie.csproj",
       "packagesPath": "C:\\Users\\bwall\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bwall\\Desktop\\smallCodeProjects\\DotnetMVC\\obj\\",
+      "outputPath": "C:\\Users\\bwall\\Desktop\\CustomTheme\\smallCodeProjects\\DotnetMVC\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\bwall\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8573,10 +8578,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://dubwstfs001:8080/tfs/EICollection/_packaging/EI.Shared.Legacy/nuget/v3/index.json": {},
+        "http://dubwstfs001:8080/tfs/EICollection/_packaging/EI.Shared/nuget/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -8588,6 +8596,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -8618,6 +8627,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[3.1.10, 3.1.10]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[3.1.0, 3.1.0]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -8626,7 +8649,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

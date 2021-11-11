@@ -1,0 +1,47 @@
+﻿
+@{
+}
+@model MvcMovie.Models.FinderViewModel 
+<form asp-controller="MovieFinder" asp-action="Result" method="get">
+    <div class="card card-header">
+        1. Select a Category
+    </div>
+    <div class="card card-body">
+
+        <p>
+            <select asp-for="MovieGenre" asp-items="Model.Genres">
+                <option value="">All</option>
+            </select>
+          
+        </p>
+
+    </div>
+
+    <div class="card card-header">
+        2. Select a Budget
+    </div>
+    <div class="card card-body">
+        <p>
+            <select asp-for="Budget" asp-items="Model.Budget">
+                <option value="">All</option>
+            </select>
+           
+        </p>
+
+
+    </div>
+    <div class="card card-header">
+        3. Select a Review
+    </div>
+    <div class="card card-body">
+
+        <p>
+            <select asp-for="starRatings" asp-items="Model.starRatings">
+                <option value="">All</option>
+            </select>
+            <input type="submit" value="Select" />
+        </p>
+
+
+    </div>
+</form>
